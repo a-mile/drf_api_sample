@@ -18,3 +18,5 @@ http://127.0.0.1:8000/api/studies/
 
 Access a list of assays:
 http://127.0.0.1:8000/api/assays/
+
+The default view will allow adding data with a web form.
