@@ -1,11 +1,13 @@
-from rest_framework import viewsets
-from .models import Study, Assay
-from .serializers import StudySerializer, AssaySerializer
+from .apiutils import APIUtilsViewSet
+from .models import Assay, Study
+from .serializers import AssaySerializer, StudySerializer
 
-class StudyViewSet(viewsets.ModelViewSet):
+
+class StudyViewSet(APIUtilsViewSet):
     queryset = Study.objects.all()
     serializer_class = StudySerializer
 
-class AssayViewSet(viewsets.ModelViewSet):
+
+class AssayViewSet(APIUtilsViewSet):
     queryset = Assay.objects.all()
     serializer_class = AssaySerializer
